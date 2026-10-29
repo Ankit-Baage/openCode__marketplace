@@ -1,0 +1,47 @@
+.wrapper {
+  position: relative;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slider__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  /* padding: 0 40px; */
+}
+.controlBtn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-60%);
+  z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer; /* optional for better UX */
+  width: 36px;
+  height: 76px;
+}
+
+.leftBtn {
+  left: 0;
+
+  background-image: url(../../assets/blue__right.svg);
+}
+
+.rightBtn {
+  right: 0;
+  background-image: url(../../assets/blue__left.svg);
+}
+
+/* @media screen and (min-width: 1024px) {
+  .controlBtn,
+  .leftBtn,
+  .rightBtn {
+    display: none;
+  }
+} */

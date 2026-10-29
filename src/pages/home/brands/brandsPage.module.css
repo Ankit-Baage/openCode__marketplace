@@ -1,0 +1,59 @@
+.box__brands {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 12px 0;
+}
+
+.box__brands__title {
+  font-family: "Poppins", sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #2f3567;
+}
+
+@media screen and (min-width: 768px) {
+  .box__brands__title {
+    font-size: 20px;
+  }
+}
+
+.box__brands__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  gap: 24px;
+  justify-content: center; /* centers items when last row has fewer */
+}
+
+@media screen and (min-width: 768px) {
+  .box__brands__container {
+    /* display: flex;
+    justify-content: space-between; */
+    gap: 32px;
+  }
+}
+
+.box__brands__item__img {
+  width: 128px;
+  height: 132px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.box__brands__item__img:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+@media screen and (min-width: 768px) {
+  .box__brands__container {
+    gap: 20px;
+  }
+
+  .box__brands__title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}

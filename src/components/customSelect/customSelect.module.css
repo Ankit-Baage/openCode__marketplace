@@ -1,0 +1,67 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  width: 100%;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.selectBox {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  background: white;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.selectedValue {
+  color: #333;
+}
+
+.arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.options {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.option {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: #e0f3f6; /* lighter shade of your primary */
+}
+
+.selected {
+  background: #1f7a8c;
+  color: white;
+}

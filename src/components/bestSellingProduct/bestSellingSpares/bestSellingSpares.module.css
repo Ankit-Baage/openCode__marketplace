@@ -1,0 +1,120 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 28px 8px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+  flex: 1 1 calc(50% - 16px);
+}
+
+/* .card:focus {
+  outline: 2px solid #ff6f3f;
+} */
+
+.card__discount {
+  position: absolute;
+  top: 8px;
+  right: -2px;
+  width: 70px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../../assets/discount__img.svg) center/cover no-repeat;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  color: #fff;
+}
+
+.box__img {
+  position: relative;
+  width: 224px;
+  height: 200px;
+}
+
+.box__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.box__img__sold {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 24px;
+  transform: translate(-50%, -50%);
+  background: url(../../../assets/sold_badge.svg) center/cover no-repeat;
+}
+
+.card__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2f3567;
+  margin: 0;
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card__price__discounted {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ff6f3f;
+}
+
+.card__price__original {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #2f3567;
+  position: relative;
+}
+
+.card__price__original::before {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #2f3567;
+}
+
+/* Tablet (≥768px) */
+@media screen and (min-width: 768px) {
+  .card {
+    flex: 1 1 calc(33.33% - 16px);
+  }
+}
+
+/* Desktop (≥1024px) */
+@media screen and (min-width: 1024px) {
+  .card {
+    flex: 1 1 calc(25% - 16px);
+  }
+
+  .card__title {
+    font-size: 16px;
+  }
+}

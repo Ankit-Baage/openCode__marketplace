@@ -1,0 +1,176 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+.box__head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.box__head__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2f3567;
+}
+
+.box__head__label {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.box__head__input {
+  width: 100%;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #2f3567;
+}
+
+.box__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 1px
+}
+.box__content__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.box__content__brand__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box__content__brand__info__label {
+  position: relative;
+  font-family: "Poppins", sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #2f3567;
+  cursor: pointer;
+}
+
+.box__content__brand__info__input,
+.box__content__brand__model__input,
+.box__content__brand__info__expandInput {
+  display: none;
+}
+.box__content__brand__info__checkbox {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  outline: 1px solid #2f3567;
+  border-radius: 2px;
+}
+.box__content__brand__info__checkbox:after {
+  content: "";
+  position: absolute;
+  transform: translate(100%, 3%);
+  display: none;
+}
+
+.box__content__brand__info__input:checked
+  ~ .box__content__brand__info__checkbox::after {
+  display: block;
+  content: "\2713";
+  width: 1px;
+  color: #ff6f3f;
+}
+
+.box__content__brand__info__input:checked
+  ~ .box__content__brand__info__checkbox {
+  outline: 1px solid #ff6f3f;
+}
+
+.box__content__brand__info__title {
+  padding-left: 20px;
+}
+
+.box__content__brand__info__input:checked ~ .box__content__brand__info__title {
+  color: #ff6f3f;
+}
+
+.box__content__brand__info__expandIcon {
+  width: 12px;
+  height: 14px;
+  background-image: url(../../../assets/expand.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box__sep {
+  border: 1.5px solid #efefef;
+}
+
+.box__content__brand__info__expandContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #2f3567 #f3f3f3;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.5s ease, padding 0.25s ease;
+}
+.box__content__brand__info__expandInput:checked
+  ~ .box__content__brand__info__expandContent {
+    max-height: 300px; /* Adjust based on your expected content */
+  padding: 16px;
+  opacity: 1;
+}
+
+.box__content__brand__model__label {
+  position: relative;
+  font-family: "Poppins", sans;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #2f3567;
+  cursor: pointer;
+}
+
+.box__content__brand__model__checkbox {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  outline: 1px solid #2f3567;
+  border-radius: 2px;
+}
+.box__content__brand__model__checkbox:after {
+  content: "";
+  position: absolute;
+  transform: translate(100%, 3%);
+  display: none;
+}
+
+.box__content__brand__model__input:checked
+  ~ .box__content__brand__model__checkbox::after {
+  display: block;
+  content: "\2713";
+  width: 1px;
+  color: #ff6f3f;
+}
+
+.box__content__brand__model__input:checked
+  ~ .box__content__brand__model__checkbox {
+  outline: 1px solid #ff6f3f;
+}
+.box__content__brand__model__title {
+  padding-left: 20px;
+}
+
+.box__content__brand__model__input:checked ~ .box__content__brand__model__title {
+  color: #ff6f3f;
+}

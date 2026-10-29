@@ -1,0 +1,254 @@
+.box {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .box {
+    padding: 16px 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .box {
+    padding: 20px 12px;
+  }
+}
+
+.box__img {
+  position: relative;
+  flex: 0 0 80px;
+}
+
+.box__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.box__img__sold {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 24px;
+  transform: translate(-50%, -50%);
+  background: url(../../assets/sold_badge.svg) center/cover no-repeat;
+}
+
+/* =================== Info =================== */
+
+.box__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .box__info {
+    row-gap: 12px;
+  }
+}
+
+.box__info__head {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.box__info__head__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #2f3567;
+}
+
+@media screen and (min-width: 768px) {
+  .box__info__head__title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .box__info__head__title {
+    font-size: 18px;
+  }
+}
+
+/* =================== Discount =================== */
+
+.box__discount {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.box__discount__container__discountedPrice {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ff6f3f;
+}
+
+@media screen and (min-width: 768px) {
+  .box__discount__container__discountedPrice {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .box__discount__container__discountedPrice {
+    font-size: 20px;
+  }
+}
+
+.box__discount__container__price {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #4a4c5f;
+}
+
+@media screen and (min-width: 768px) {
+  .box__discount__container__price {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .box__discount__container__price {
+    font-size: 16px;
+  }
+}
+
+.box__discount__container__price::before {
+  content: "";
+  position: absolute;
+  bottom: 45%;
+  width: 100%;
+  height: 1px;
+  background-color: #4a4c5f;
+}
+
+.box__discount__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../assets/discount__img.svg) center/cover no-repeat;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  color: #fff;
+  padding: 2px 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .box__discount__img {
+    font-size: 10px;
+    padding: 4px 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .box__discount__img {
+    font-size: 12px;
+    padding: 6px 28px;
+  }
+}
+
+/* =================== Quantity Controls =================== */
+
+.box__qty__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box__info__qty {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.box__info__qty__btn,
+.box__info__qty__btn__enabled {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.box__info__qty__btn {
+  background-color: #ffd4c5;
+  cursor: not-allowed;
+}
+
+.box__info__qty__btn__enabled {
+  background-color: #ff6f3f;
+}
+
+.box__info__qty__label {
+  width: 40px;
+  height: 24px;
+  border: 1px solid #ff6f3f;
+  border-radius: 4px;
+}
+
+.box__info__qty__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+  background-color: transparent;
+}
+
+/* =================== Delete Button =================== */
+
+.box__qty__delete__btn {
+  width: 16px;
+  height: 20px;
+  background: url(../../assets/delete_Icon.svg) center/cover no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* =================== Wishlist =================== */
+
+.box__info__fav,
+.box__info__fav__active {
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.box__info__fav {
+  background-image: url(../../assets/heart.svg);
+}
+
+.box__info__fav__active {
+  background-image: url(../../assets/heart__filled.svg);
+}

@@ -1,0 +1,40 @@
+/* .box {
+  display: flex;
+  flex-direction: column;
+} */
+
+.box__title {
+  font-size: 12px;
+  color: #808080;
+  font-family: "Poppins", sans;
+  font-weight: 400;
+  padding: 0 24px
+
+}
+
+.box__content {
+  display: flex;
+  column-gap: 8px;
+  justify-content: space-between;
+  border-radius: 6px;
+  border: 1px dashed #00A267;
+  border-radius: 4px;
+  padding: 12px 6px;
+  background-color: #EDFEF8;
+  cursor: pointer;
+}
+
+.box__img {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.box__url {
+  font-size: 12px;
+  color: #808080;
+  font-family: "Poppins", sans;
+  font-weight: 400;
+  word-break: break-all;
+
+}

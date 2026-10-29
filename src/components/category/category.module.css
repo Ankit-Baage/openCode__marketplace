@@ -1,0 +1,210 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  justify-content: center;
+}
+
+.box__title {
+  font-family: "Poppins", sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #2f3567;
+}
+
+.box__vrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f3567;
+  border-radius: 8px;
+}
+
+.box__vrp__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  justify-content: center;
+  padding: 0 4px 10px 16px;
+}
+
+.box__vrp__content__title {
+  font-family: "Poppins", sans;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.box__vrp__content__para {
+  font-family: "Poppins", sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.6px;
+  color: #969abe;
+}
+
+.box__others {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.box__others__prexo {
+  display: flex;
+  justify-content: center;
+  background-color: #e4fdef;
+  border-radius: 8px;
+  padding: 6px 0 0 12px;
+}
+
+.box__others__prexo__title {
+  font-family: "Poppins", sans;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2f3567;
+  padding-top: 6px;
+}
+
+.box__others__spares {
+  display: flex;
+  justify-content: center;
+  background-color: #ffe8e0;
+  border-radius: 8px;
+}
+
+.box__others__spares__title {
+  font-family: "Poppins", sans;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2f3567;
+  padding: 12px 0 0 12px;
+}
+
+.box__newPhones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6f3f;
+  border-radius: 8px;
+  padding: 14px 17px 0 16px;
+}
+
+.box__newPhones__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  justify-content: center;
+}
+
+.box__newPhones__content__title {
+  font-family: "Poppins", sans;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.box__newPhones__content__para {
+  font-family: "Poppins", sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.6px;
+  color: #ffd7ca;
+  padding-right: 4px;
+}
+.box__category__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box__category__head__link {
+  font-family: "Poppins", sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FF6F3F;
+}
+
+.box__category {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  justify-content: center;
+}
+
+.box__category__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  justify-content: center;
+}
+.box__category__item__menu {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+  background-color: #efefef;
+  padding: 8px;
+}
+
+.box__category__item__menu__icon {
+  width: 12px;
+  height: 12px;
+  background-image: url(../../assets/category__menu__icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.box__category__item__menu__title {
+  font-family: "Poppins", sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #2f3567;
+}
+
+.box__category__item__subitems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  align-items: baseline;
+}
+
+.box__category__item__subitems__element {
+  width: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box__category__item__subitems__element__info {
+  width: 68px;
+  height: 60px;
+  border: 1px solid #2f3567;
+  border-radius: 10px;
+  
+}
+
+.box__category__item__subitems__element__info__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box__category__item__subitems__element__name {
+  font-family: "Poppins", sans;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: #2f3567;
+}

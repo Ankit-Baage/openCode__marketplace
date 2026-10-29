@@ -1,0 +1,102 @@
+
+/* ==========================
+   Box Component
+   ========================== */
+.box {
+  display: flex;
+  align-items: center;
+  column-gap: 0.875rem; /* 14px */
+  border-radius: 0.5rem; /* 8px */
+  background-color: #ffffff;
+  box-shadow: 0px 0px 2.2px 0px #0000002B;
+  padding: 1.25rem 0.75rem; /* 20px 12px */
+  transition: transform 0.2s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-0.125rem); /* -2px */
+}
+
+@media (min-width: 768px) {
+  .box {
+    padding: 1.625rem 2rem; /* 26px 32px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    padding: 1.625rem 2.5rem; /* 26px 40px */
+  }
+}
+
+/* ==========================
+   Image/Icon
+   ========================== */
+.box__image {
+  display: block;
+  width: 1.5rem; /* 24px */
+  height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .box__image {
+    width: 2.5rem; /* 40px */
+    height: 2.5rem;
+  }
+}
+
+/* ==========================
+   Text Container
+   ========================== */
+.box__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0.25rem; /* 4px */
+}
+
+/* ==========================
+   Title Text
+   ========================== */
+.box__info__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem; /* 12px */
+  line-height: 1.3;
+  color: #2F3567;
+}
+
+@media (min-width: 768px) {
+  .box__info__title {
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .box__info__title {
+    font-size: 1rem; /* 16px */
+  }
+}
+
+/* ==========================
+   Subtitle Text
+   ========================== */
+.box__info__subTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.5rem; /* 8px */
+  line-height: 1.3;
+  color: #989898;
+}
+
+@media (min-width: 768px) {
+  .box__info__subTitle {
+    font-size: 0.625rem; /* 10px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .box__info__subTitle {
+    font-size: 0.75rem; /* 12px */
+  }
+}

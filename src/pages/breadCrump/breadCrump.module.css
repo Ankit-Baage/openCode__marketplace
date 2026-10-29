@@ -1,0 +1,26 @@
+.breadcrumbs {
+  display: none;
+}
+.breadcrumbs__link {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans;
+  color: #2F3567;
+  cursor: pointer;
+
+}
+.breadcrumbs__current {
+  cursor: text;
+    font-weight: 400;
+
+}
+
+
+@media (min-width:1024px) {
+  .breadcrumbs {
+    display: block;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+}

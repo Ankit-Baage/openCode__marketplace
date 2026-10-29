@@ -1,0 +1,109 @@
+.box {
+  position: relative;
+  width: 100%;
+  font-family: "Poppins", sans;
+}
+
+.box__select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #9b9b9b;
+  font-size: 14px;
+  line-height: 14px;
+  transition: 0.3s ease;
+}
+
+.box__select:hover {
+  border-color: E6E6E6;
+}
+
+.box__select::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  /* Adjust size as needed */
+  height: 16px;
+  background-image: url("../../../assets//chevron-down.svg");
+  /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #E6E6E6;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 4px;
+  z-index: 10;
+  transition: 0.3s ease-in-out;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-family: "Poppins", sans;
+  color: #9b9b9b;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.option:hover {
+  background: #f0f0f0;
+}
+
+/* Custom checkbox styling */
+.option input {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid #FF6F3F;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.option input:checked {
+  background: #FF6F3F;
+  border-color: #FF6F3F;
+}
+
+.option input:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+  .box__select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .dropdown {
+    max-height: 150px;
+  }
+}

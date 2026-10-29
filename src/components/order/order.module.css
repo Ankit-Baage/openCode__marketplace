@@ -1,0 +1,462 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  box-shadow: 0px 4px 16px 0px #00000014;
+  padding: 12px;
+  border-radius: 4px;
+}
+.box__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 6px;
+}
+@media screen and (min-width: 768px) {
+  .box {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* column-gap: 100px; */
+    border: 1px solid #989898;
+  }
+  .box__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    row-gap: 6px;
+  }
+  .box__sep {
+    display: none;
+  }
+}
+
+.box__upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box__upper__order {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  justify-content: center;
+}
+.box__upper__order__info__dropDown {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  justify-content: center;
+  /* align-items: center; */
+}
+.box__upper__dropDown__btn {
+  display: block;
+  text-align: left;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Poppins", sans;
+  color: #2f3567;
+}
+
+.box__upper__order__info {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+}
+
+.box__upper__order__info__key {
+  font-size: 16px;
+  line-height: 18.2px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #989898;
+}
+
+.box__upper__order__info__value {
+  font-size: 16px;
+  line-height: 18.2px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #2f3567;
+}
+
+.box__upper__order__date {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  align-items: end;
+}
+.box__upper__order__date__text {
+  font-size: 12px;
+  line-height: 15.6px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #989898;
+}
+
+.box__expand {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/chevron-down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.box__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.box__content__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box__content__info__title {
+  font-size: 14px;
+  line-height: 18.2px;
+  font-weight: 600;
+  font-family: "Poppins", sans;
+  color: #2f3567;
+}
+
+.box__content__info__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+}
+.box__content__info__box__status {
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 500;
+  font-family: "Poppins", sans;
+  color: #f2b200;
+  padding: 8px;
+  border-radius: 40px;
+  background-color: #fbe8b3;
+}
+
+.box__return {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.box__return__info {
+  display: flex;
+  column-gap: 8px;
+}
+
+.box__return__info__img {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.box__return__info__title {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #989898;
+}
+
+.box__sep {
+  background-color: #efefef;
+  height: 1.5px;
+}
+
+.box__content__expand {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/chevron-down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  /* z-index: 8; */
+}
+.box__content__detail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.box__content__detail__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+.box__content__detail__item__shipment {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  align-items: center;
+  background-color: #2f3567;
+  padding: 8px 7px 8px;
+}
+
+.box__content__detail__item__info__shipment {
+  font-size: 14px;
+  line-height: 18.2px;
+  font-weight: 600;
+  font-family: "Poppins", sans;
+  color: #ffffff;
+}
+
+.box__content__detail__item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+
+.box__content__detail__item__info {
+  font-size: 14px;
+  line-height: 18.2px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #4a4c5f;
+}
+
+.box__sep {
+  width: 100%;
+  background-color: #efefef;
+  height: 1.5px;
+}
+
+.box__upper__order__info__key__amt {
+  font-size: 14px;
+  line-height: 15.6px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #4a4c5f;
+}
+
+.box__upper__order__info__value__amt {
+  font-size: 14px;
+  line-height: 18.2px;
+  font-weight: 600;
+  font-family: "Poppins", sans;
+  color: #ff6f3f;
+}
+
+.box__downLoad {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: #46cd80;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.box__downLoad__icon {
+  width: 14px;
+  height: 14px;
+  background-image: url("../../assets/downLoadIcon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box__downLoad__text {
+  font-size: 12px;
+  line-height: 15.6px;
+  font-weight: 600;
+  font-family: "Poppins", sans;
+  color: #ffffff;
+}
+
+.box__content__return {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+}
+
+.box__content__return__btn {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #4a4c5f;
+  border-radius: 20px;
+  padding: 6px 9px;
+  border: 1px solid #4a4c5f;
+}
+
+.box__content__return__img {
+  width: 12px;
+  height: 12px;
+  background-image: url("../../assets/return_request.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box__content__return__text {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #989898;
+}
+
+.box__order__status {
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 500;
+  font-family: "Poppins", sans;
+  border-radius: 20px;
+  padding: 6px 10px;
+}
+@media screen and (min-width:768px) {
+  .box__order__status {
+  
+  padding: 4px 6px;
+}
+  
+}
+
+.box__order__info__payment {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/chevron-down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box__content,
+.box__content__detail__info {
+  overflow: hidden;
+}
+
+.box__order__info__payment__details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  justify-content: center;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+.box__order__info__payment__details.open {
+  max-height: 1000px; /* large enough to fit content */
+  opacity: 1;
+}
+.box__order__info__payment__details__title {
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans;
+  color: #2f3567;
+}
+.box__order__info__payment__details__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 12px;
+}
+
+.box__order__info__payment__details__info__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box__order__info__payment__details__info__item__title {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #777777;
+  line-height: 12px;
+}
+
+.box__order__info__payment__details__info__item__value {
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #777777;
+}
+
+/* .box__order__info__payment__details__info__item__total__title {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: "Poppins", sans;
+  color: #2F3567;
+
+}
+
+.box__order__info__payment__details__info__item__total__value {
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: "Poppins", sans;
+  color: #FF6F3F;
+
+} */
+
+.box__order__cancel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box__order__cancel__btn {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #fe0000;
+}
+
+.box__order__cancel__text {
+  font-size: 10px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #989898;
+}
+
+.box__content__detail__info {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.box__content__detail__info.open {
+  max-height: 1000px; /* enough for full content */
+  opacity: 1;
+}
+
+.box__content__expand {
+  transition: transform 0.3s ease;
+  display: inline-block;
+  /* Add your arrow icon via background if needed */
+}
+
+.box__content__expand.rotate {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,52 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+
+}
+
+.from__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  grid-auto-rows: auto;
+  gap: 16px;
+  width: 100%;
+  align-items: center;
+}
+
+/* If the total number of items is odd, make the last item span 2 columns */
+.from__grid > :nth-last-child(1):nth-child(odd) {
+  grid-column: span 2;
+}
+
+.form__head {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans;
+  color: #FF6F3F;
+  text-align: center;
+}
+
+.form__btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__btn {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans;
+  color: #FFFFFF;
+  background-color: #9C9C9C;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.form__btn__enabled {
+  background-color: #FF6F3F;
+  cursor: pointer;
+
+}

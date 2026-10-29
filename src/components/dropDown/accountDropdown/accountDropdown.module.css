@@ -1,0 +1,390 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  background-color: #fff;
+  padding: 12px 16px;
+}
+
+.box__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box__controls__tab__btn__head {
+  width: 80px;
+  height: 28px;
+  /* border-radius: 4px;
+
+  background-image: url("../../assets//logOut__btn.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+@media screen and (min-width: 768px) {
+  .box__controls__tab__btn__head {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .box {
+    gap: 32px;
+  }
+}
+
+.box__logo {
+  /* background-image: url(../../assets/logo_name_desktop.svg); */
+  width: 168px;
+  height: 44px;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.box__box__logo__img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .box__logo {
+    /* background-image: url(../../assets/logo_name_desktop.svg); */
+    width: 130px;
+    height: 34px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .box__logo {
+    /* background-image: url(../../assets/logo_name_desktop.svg); */
+    width: 167px;
+    height: 44px;
+  }
+}
+
+.box__controls {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px) {
+  .box__controls {
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.box__controls__search {
+  width: 100%;
+  padding-right: unset;
+}
+@media screen and (min-width: 1024px) {
+  .box__controls__search {
+    width: 60%;
+    padding-right: 20px;
+  }
+}
+
+.box__media {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .box__media {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    justify-content: space-between;
+  }
+}
+
+.box__media__getApp {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box__media__getApp__icon {
+  display: block;
+  width: 94px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.box__media__getApp__label {
+  font-size: 10px;
+  color: #2f3567;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  width: max-content;
+  line-height: 130%;
+  padding-bottom: 6px;
+}
+
+.box__media__getApp__buttons {
+  display: none;
+
+  position: absolute;
+  top: 100%; /* position below the container */
+  /* left: 0; */
+  /* right: 0; */
+  gap: 8px;
+  padding: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.box__media__getApp:hover .box__media__getApp__buttons {
+  display: flex;
+
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.box__media__getApp__content {
+  display: block;
+  width: 88px;
+  height: 26px;
+}
+
+.box__media__getApp__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box__controls__custCare {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background-image: url(../../../assets/cust_care.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box__media__getApp__profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.box__media__getApp__profile__content {
+  display: inline-flex; /* children stay in one row */
+  align-items: baseline; /* align text nicely */
+  gap: 4px; /* spacing between Hello, and sign in */
+  white-space: nowrap;
+}
+
+.box__media__getApp__profile__content__salutation {
+  font-size: 10px;
+  color: #2f3567;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.box__media__getApp__profile__content__name {
+  font-size: 14px;
+  color: #2f3567;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.box__media__getApp__profile__account {
+  font-size: 14px;
+  color: #2f3567;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.box__media__getApp__profile__account__dropdown {
+  width: 7px;
+  height: 5px;
+  position: relative;
+  background-image: url(../../../assets/account__dropdown.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.box__media__getApp__profile__account__navigate {
+  position: absolute;
+  display: none;
+  top: 100%; /* position below the container */
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 10;
+}
+.box__media__getApp__profile:hover
+  .box__media__getApp__profile__account__navigate {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.box__media__getApp__profile__account__navigate__link {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 10px;
+  border-radius: 4px;
+  padding: 6px;
+  transition: background-color 0.2s ease;
+}
+.box__media__getApp__profile__account__navigate__link__img {
+  display: block;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.box__media__getApp__profile__account__navigate__link__text {
+  font-size: 16px;
+  line-height: 18.2px;
+  color: #2f3567;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.box__media__getApp__profile__account__navigate__link:hover {
+  background-color: #f0f0f0;
+}
+
+.loginLink {
+  border: 1px solid #2f3567;
+}
+
+.logoutLink {
+  border: 1px solid #2f3567;
+}
+
+.loginLink .box__media__getApp__profile__account__navigate__link__text {
+  color: #ff6f3f;
+}
+
+.logoutLink .box__media__getApp__profile__account__navigate__link__text {
+  color: #ff6f3f;
+}
+
+.box__controls__cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box__controls__cart__item {
+  position: absolute;
+  top: -10px;
+  right: 12%;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #2f3567;
+  color: #ffff;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.box__controls__cart__img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  z-index: 3;
+}
+@media screen and (min-width: 768px) {
+  .box__controls__cart__img {
+    width: 32px;
+    height: 32px;
+  }
+  .box__controls__cart__item {
+    top: -8px;
+    right: 12%;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.box__controls__tab {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .box__controls__tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+}
+
+.box__controls__tab__profile {
+  background-image: url(../../../assets/profile__tab.svg);
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box__controls__tab__btn {
+  background-image: url(../../../assets/logIn__btn.svg);
+  width: 62px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box__controls__authBtn {
+  width: 80px;
+  height: 28px;
+  border-radius: 4px;
+
+  background-image: url(../../../assets/logIn__btn.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .box__controls__authBtn {
+    display: none;
+  }
+}
+
+

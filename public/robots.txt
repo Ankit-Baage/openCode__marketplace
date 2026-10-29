@@ -1,0 +1,13 @@
+# robots.txt for https://www.mobigarage.com/
+# Allow search engines to index all public content.
+
+User-agent: *
+Allow: /
+
+# Disallow backend, admin, or internal routes if any
+Disallow: /admin/
+Disallow: /api/
+Disallow: /static/
+
+# Sitemap (make sure you actually have this file)
+Sitemap: https://www.mobigarage.com/sitemap.xml

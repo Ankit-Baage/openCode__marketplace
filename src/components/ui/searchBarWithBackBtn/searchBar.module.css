@@ -1,0 +1,244 @@
+.box__wrapper {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .box {
+    gap: 32px;
+  }
+}
+
+.box__backBtn {
+  width: 24px;
+  height: 24px;
+  background: url("../../../assets/search__back__btn.svg") center/cover
+    no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .box__backBtn {
+    display: none;
+  }
+}
+
+.box__control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  border: 1px solid #ff6f3f;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 3.78px 15.11px 0px #00000014;
+}
+
+.box__control__select {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 10px;
+  background-color: #fff;
+  border-right: 1px solid #ff6f3f;
+  cursor: pointer;
+}
+
+.box__control__select__label {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #2f3567;
+}
+
+.box__control__select__img {
+  width: 8px;
+  height: 5px;
+}
+
+.box__control__search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.box__control__search__label {
+  flex: 1;
+}
+
+.box__control__search__input {
+  width: 100%;
+  padding: 12px 4px; 
+  border: none;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #2f3567;
+  outline: none;
+}
+
+.box__control__search__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px; /* Adjusted to match the input height */
+  height: 100%; /* Match the input height (e.g., 40px) */
+  background-color: #ff6f3f;
+  background-image: url("../../../assets/search__icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px; /* Adjust icon size as needed */
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.box__control__select__dropdown__options {
+  position: absolute;
+  top: 52px;
+  left: 16px;
+  background-color: #fff;
+  border: 1px solid #ff6f3f;
+  border-radius: 4px;
+  padding: 6px;
+  z-index: 999;
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.box__control__select__dropdown__option {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  padding: 4px 6px;
+  color: #2f3567;
+  cursor: pointer;
+}
+
+.box__cartLink,
+.box__profileLink {
+  width: 40px;
+  height: 40px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.box__cartLink {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .box__cartLink {
+    display: none;
+  }
+}
+
+.box__catLink__badge {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 40%;
+  top: 0;
+  border-radius: 50%;
+  background-color: #2f3567;
+  font-size: 8px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #ffffff;
+ 
+}
+
+.box__cartLink__icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .box__profileLink {
+    display: none;
+  }
+}
+
+.login__desktop {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .login__desktop {
+    width: 73px;
+    height: 27px;
+    background: url("../../../assets/header__logOut.svg") center/cover no-repeat;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+
+
+.suggestionsDropdown {
+  position: absolute;
+  width:66%;
+  top: 100%;
+  left: 16%;
+  background-color: #fff;
+  border: 1px solid #ff6f3f;
+  border-radius: 4px;
+  padding: 4px;
+  z-index: 999;
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 6px;
+}
+
+.suggestionItem {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  padding: 4px;
+  color: #2f3567;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+
+.suggestionItem:hover {
+  background-color: #FFD4C5;
+  color: #fff;
+  /* transform: translateX(4px); */
+  
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* Prevent line breaks */
+  border: 0;
+}

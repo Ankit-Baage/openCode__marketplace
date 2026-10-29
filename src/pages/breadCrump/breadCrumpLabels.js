@@ -1,0 +1,26 @@
+// maps route segments or params to human-friendly labels
+export const breadcrumbLabels = {
+  "/": "Home",
+  spares: "Spares",
+  vrp: "VRP",
+  newPhones: "New Phones",
+  openBox: "Open Box",
+  cart: "Cart",
+  wishlist: "Wishlist",
+  address: "Address",
+  profileInfo: "Profile Info",
+  review: "Review",
+  orders: "Orders",
+  help: "Help",
+  policies: "Policies",
+  aboutUs: "About Us",
+  support: "Support",
+  privacy: "Privacy Policies",
+  refundAndReplacement: "Replacement Policies",
+  termsAndConditions: "Terms & Conditions",
+  warranty: "Warranty",
+  faqs: "FAQs",
+  hotSelling: "Hot Selling",
+  search: "Search",
+  // dynamic IDs will be handled separately
+};

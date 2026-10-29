@@ -1,0 +1,225 @@
+/* ========== Wrapper & Sections ========== */
+.footerWrapper {
+  width: 100%;
+}
+
+/* Mobile Footer (Sticky Bottom Nav) */
+.mobileFooter {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 12px 12px 0 0;
+  box-shadow: -4px 0px 16px 0px #0000001a;
+  padding: 12px 11px 18px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+@media (min-width:1025px) {
+  .mobileFooter {
+    display: none;
+  }
+}
+
+/* ========== Mobile Nav Items ========== */
+.navItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  padding: 4px 14px;
+  text-decoration: none;
+}
+
+.box__catLink__badge {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 40%;
+  top: -16%;
+  border-radius: 50%;
+  background-color: #2f3567;
+  font-size: 8px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  color: #ffffff;
+ 
+}
+
+.navInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 4px;
+}
+
+.navIcon {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.navLabel {
+  font-size: 12px;
+  line-height: 15.6px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #989898;
+}
+
+.navLabelActive {
+  font-weight: 500;
+  color: #ff6f3f;
+}
+
+/* ========== Desktop Footer ========== */
+
+
+.desktopFooter {
+  display: none;
+  position: relative;
+  padding: 20px 24px 52px;
+  background-color: #12173a;
+}
+
+@media (min-width: 1025px) {
+  .desktopFooter {
+    display: block;
+    padding: 24px 16px 60px;
+  }
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 48px;
+}
+
+@media (min-width: 1024px) {
+  .footerContainer {
+    column-gap: 96px;
+  }
+}
+
+/* ========== Footer Columns ========== */
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.footerColumn:not(:first-child) {
+  padding: 12px;
+}
+
+.companyColumn {
+  row-gap: 24px;
+}
+
+/* ========== Logo ========== */
+.logoLink {
+  display: block;
+  width: 180px;
+  height: 44px;
+}
+
+@media (min-width: 1024px) {
+  .logoLink {
+    width: 212px;
+    height: 52px;
+  }
+}
+
+.logoImg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ========== Content Blocks ========== */
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 12px;
+}
+
+.footerTitle {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  font-family: "Poppins", sans;
+  color: #ffffff;
+}
+@media (min-width: 1024px) {
+  .footerTitle {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLink {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #ffffffad;
+  text-decoration: none;
+}
+@media (min-width: 1024px) {
+  .footerLink {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.footerLink:hover {
+  color: #ffffff;
+}
+
+/* ========== Social Media ========== */
+.socialLinks {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.socialIcon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.box__helpChat {
+  position: absolute;
+  top: -20%;
+  right: 0;
+  display: block;
+  width: 92px;
+  height: 92px;
+  position: absolute;
+  background-image: url(../../assets/help__chat.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

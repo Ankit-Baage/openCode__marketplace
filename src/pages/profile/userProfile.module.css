@@ -1,0 +1,80 @@
+.userProfile {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+/* Tablet and above */
+@media screen and (min-width: 768px) {
+  .userProfile {
+    flex-direction: row;
+    column-gap: 32px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .profile,
+  .profile__banner {
+    flex: 1;
+  }
+}
+
+.profile__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile__head__title {
+  font-family: "Poppins", sans;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #2f3567;
+}
+
+.profile__head__status {
+  align-self: center;
+  font-family: "Poppins", sans;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 10px 8px;
+  border-radius: 4px;
+}
+
+.profile__head__status__incomplete {
+  color: #2f3567;
+  background-color: #ffe8df;
+  border: 1px solid #ff6f3f;
+}
+
+.profile__head__status__pending {
+  color: #ffffff;
+  background-color: #ff6f3f;
+}
+.profile__head__status__completed {
+  color: #ffffff;
+  background-color: #46cd80;
+}
+
+.profile__head__status__rejected {
+  color: #ffffff;
+  background-color: #fe0000;
+}
+
+.profile__banner {
+  width: 260px;
+  height: 260px;
+}
+.profile__banner__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+  .profile__banner {
+    display: none;
+  }
+}

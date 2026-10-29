@@ -1,0 +1,78 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box__table {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid #989898;
+  border-radius: 8px;
+}
+.box__table__empty {
+  border: none;
+  align-self: flex-end;
+}
+
+.box__modelTable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.box__modelTable__head {
+  border-right: 1px solid #ccc;
+}
+
+.box__modelTable__header__cell:last-child {
+  border-right: none;
+}
+
+.box__modelTable__head__row__cell {
+  font-family: "Poppins", sans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #4a4c5f;
+  padding: 10px 14px;
+  text-align: left;
+  border-right: 1px solid #ccc;
+  width: 50%;
+}
+.box__modelTable__head__row__cell {
+  border-bottom: 1px solid #989898;
+}
+
+.box__modelTable__row:not(:last-child) {
+  border-bottom: 1px solid #989898;
+}
+
+.box__modelTable__body__row__data {
+  font-family: "Poppins", sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #4a4c5f;
+  padding: 10px 14px;
+  text-align: left;
+  border-right: 1px solid #ccc;
+  width: 50%;
+}
+.box__modelTable__body__row__data:first-child {
+  border-right: 1px solid #ccc; /* vertical center line */
+  padding-right: 16px; /* optional: for spacing */
+}
+
+.box__modelTable__body__row__data:last-child {
+  border-right: none;
+}
+
+.box__modelTable__body__row__data__empty {
+  font-family: "Poppins", sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #4a4c5f;
+}

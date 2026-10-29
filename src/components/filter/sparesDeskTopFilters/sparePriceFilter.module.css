@@ -1,0 +1,28 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 12px;
+}
+
+.box__head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.box__head__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2f3567;
+}
+
+.box__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+

@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  width: 100%
+}
+.container__label {
+  width: 100%
+}
+
+.container__input {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #FF6F3F;
+  padding: 8px 10px 8px 34px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #2F3567;
+
+}
+
+.container__input::placeholder {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans;
+  color: #BBB;
+
+}
+
+.container__box {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  
+}
+
+.container__box__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}

@@ -1,0 +1,23 @@
+import { useQuery } from "@tanstack/react-query";
+import { spareDetailRequest } from "../../utils/https-request/spares/spareDetailRequest";
+
+
+
+function useGetSpareDetail({ requestId, user_id, medium }) { // Destructure as an object
+  const {
+    data,
+    isError,
+    isLoading,
+    isSuccess,
+  } = useQuery({
+    queryKey: ["spareProductDetail",user_id, requestId, medium],
+    queryFn: () => spareDetailRequest({ requestId,user_id, medium }), // Wrapped in a function
+    refetchOnWindowFocus: false,
+    retry: 2,
+    retryDelay: 1000,
+    enabled: !!requestId
+  });
+  return { data, isError, isLoading, isSuccess };
+}
+
+export default useGetSpareDetail;

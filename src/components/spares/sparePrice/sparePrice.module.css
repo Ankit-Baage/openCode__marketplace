@@ -1,0 +1,229 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  justify-content: center;
+}
+
+.box__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 8px;
+}
+
+.box__title {
+  font-size: 1.125rem;
+  line-height: 1.4625rem;
+  color: var(--text-primary);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.box__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box__container {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+}
+
+.box__quantity {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.box__price__discount {
+  font-size: 1.125rem;
+  line-height: 1.4625rem;
+  color: var(--text-secondary);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-semibold);
+  
+}
+
+.box__price__original {
+ font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: 0.875rem;
+  line-height: 1.1375rem;
+  color: var(--text-disabled);
+  position: relative;
+  padding-right: 4px;
+}
+
+.box__price__original::before {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  right: 4%;
+  width: 100%;
+  height: 1px;
+  background-color: #4a4c5f;
+}
+
+.box__price__discount__img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../../assets/discount__img.svg);
+  font-family: "Poppins", sans;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 8px;
+  color: var(--text-white);
+  padding: 2px 12px;
+}
+
+.box__qty__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box__info__qty {
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+}
+
+.box__info__qty__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #ffd4c5;
+}
+
+.box__info__qty__btn__enabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  color: var(--text-white);
+  background-color: var(--text-secondary);
+}
+
+.box__info__qty__label {
+  width: 40px;
+  height: 24px;
+  border: 1px solid #ff6f3f;
+  border-radius: 4px;
+}
+
+.box__info__qty__input {
+  width: 100%;
+
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: 0.875rem;
+  line-height: 1.1375rem;
+  color: var(--text-disabled);
+  text-align: center;
+  background: transparent;
+}
+
+.box__divider {
+  background-color: #efefef;
+  height: 1px;
+}
+
+.box__qty__wrapper__content {
+  width:max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* justify-content: center; */
+  padding: 4px 0;
+  gap: 4px;
+  
+
+}
+
+/* .box__wrapper__para {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: 0.875rem;
+  line-height: 1.1375rem;
+  color: var(--text-disabled);
+  text-align: center;
+} */
+
+.box__wrapper__para__black {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: 0.625rem;
+  line-height: 0.625rem;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.box__wrapper__para__orange {
+  font-family: "Poppins", sans;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ff6f3f;
+  text-align: center;
+}
+
+.box__qty__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+
+.box__qrty__wrapper__helper {
+  /* display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap; */
+  
+}
+
+.box__wrapper__para {
+  font-family: "Poppins", sans;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  color: #000000;
+  text-align: center;
+}
+
+.box__wrapper__para__black {
+  font-family: "Poppins", sans;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 10px;
+  color: #2f3567;
+  text-align: center;
+}
+
+.box__wrapper__para__orange {
+  font-family: "Poppins", sans;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ff6f3f;
+  text-align: center;
+}
+
+.box__wrapper__para__btn {
+  width: 87px;
+  height: 20px;
+  background-image: url(../../../assets/remove__btn.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

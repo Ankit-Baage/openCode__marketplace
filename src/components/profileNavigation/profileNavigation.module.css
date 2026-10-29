@@ -1,0 +1,174 @@
+.box__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .box {
+    row-gap: 32px;
+  }
+}
+
+.box__profile {
+  height: 140px;
+  background-image: url(../../assets/profile__back.svg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  padding: 100px 100px 14px 16px;
+  aspect-ratio: 16 / 9;
+}
+@media screen and (min-width: 768px) {
+  .box__profile {
+    height: 300px;
+    padding: 240px 24px 40px 28px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .box__profile {
+    height: 350px;
+    padding: 280px 48px 32px 60px;
+  }
+}
+.box__profile__user {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .box__profile__user {
+    column-gap: 12px;
+  }
+}
+
+.box__profile__user__avatar {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #46cd80;
+  font-family: "Poppins", sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .box__profile__user__avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    line-height: 17.21px;
+  }
+}
+
+.box__profile__user__name {
+  font-family: "Poppins", sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .box__profile__user__name {
+    font-size: 21px;
+    line-height: 20.8px;
+  }
+}
+
+.box__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .box__links {
+    row-gap: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .box__links {
+    row-gap: 40px;
+  }
+}
+
+.box__links__container {
+  display: grid;
+  gap: 1rem; /* 20px */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-flow: dense;
+  align-items: start;
+}
+
+@media screen and (min-width: 768px) {
+  .box__links__container {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(300px, 1fr)
+    ); /* Adjust for larger screens */
+    gap: 28px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .box__links__container {
+    /* grid-template-columns: repeat(auto-fill, minmax(386px, 1fr));  */
+    gap: 36px;
+  }
+}
+
+.box__btn {
+  align-self: center;
+  width: max-content;
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 16px 0px #0000001a;
+  border-radius: 8px;
+  font-family: "Poppins", sans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ff6f3f;
+  padding: 12px 100px;
+}
+
+.box__btn__img {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../assets/logOut.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box__links__moreInfo {
+  font-family: "Poppins", sans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #989898;
+  padding: 16px;
+}
+
+.box__brand {
+  text-align: center;
+  font-family: "Poppins", sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #989898;
+}

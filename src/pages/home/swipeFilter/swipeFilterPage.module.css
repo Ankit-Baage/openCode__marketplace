@@ -1,0 +1,122 @@
+.box__routes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 12px;
+}
+.box__routes__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.box__routes__category {
+  overflow: hidden;
+}
+
+.box__routes__category__slider {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 0 4px;
+  /* Add these two lines 👇 */
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.box__routes__category__slider__slide {
+  font-family: "Poppins", sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #2f3567;
+}
+
+.box__routes__category__slider__slide__active {
+  color: #ff6f3f;
+}
+
+.container__box__category__navigate {
+  font-family: "Poppins", sans;
+  font-weight: 500;
+  
+  font-size: 14px;
+  line-height: 14px;
+  color: #ff6f3f;
+  white-space: nowrap;
+}
+
+.box__routes__subCategory {
+  position: relative;
+  /* border: 1px solid #ff6f3f; */
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 12px;
+  /* background-color: #f7f7f7; */
+}
+.box__routes__subCategory__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+}
+/* .box__routes__subCategory__img {
+  display: block;
+  width: 72px;
+  height: 65px;
+  border: 1px solid #2f356775;
+  border-radius: 10px;
+} */
+
+.box__routes__subCategory__img {
+  height: 65px;
+  width: auto;
+  object-fit: contain;
+  border: 1px solid #2f356775;
+  border-radius: 10px;
+}
+
+
+.box__routes__subCategory__name {
+  font-family: "Poppins", sans;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: #2f3567;
+  white-space: nowrap;
+}
+
+/* .box__routes__subCategory__controls {
+} */
+
+.box__routes__category__controls__btn {
+  position: absolute; /* missing earlier */
+  top: 52%;
+  transform: translateY(-60%);
+  z-index: 11;
+  width: 36px;
+  height: 76px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer; /* optional for better UX */
+}
+
+.box__routes__category__controls__btn__left {
+  left: 0;
+  background-image: url(../../../assets/blue__right.svg);
+}
+
+.box__routes__category__controls__btn__right {
+  right: 0;
+  background-image: url(../../../assets/blue__left.svg);
+}
+@media screen and (max-width: 768px) {
+  .box__routes__category__controls__btn,
+  .box__routes__category__controls__btn__left,
+  .box__routes__category__controls__btn__right {
+    display: none;
+  }
+}
+

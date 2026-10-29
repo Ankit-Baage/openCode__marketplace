@@ -1,0 +1,35 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.box__filter__mobile {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .box__filter__mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+  }
+}
+
+.box__filter__desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .box__filter__desktop {
+    display: block;
+    min-width: 220px;
+    max-width: 280px;
+  }
+}
